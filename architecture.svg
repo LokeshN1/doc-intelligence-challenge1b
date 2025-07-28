@@ -1,0 +1,114 @@
+    <svg width="1800" height="650" viewBox="0 0 1800 650" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', sans-serif;">
+    <rect width="100%" height="100%" fill="#ffffffff" />
+        <!-- Defs for arrow marker -->
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#334155" />
+            </marker>
+            <marker id="step-arrowhead" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+                <polygon points="0 0, 8 3, 0 6" fill="#64748b" />
+            </marker>
+        </defs>
+
+        <!-- Main Title -->
+        <text x="900" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#1e293b">Persona-Driven Document Intelligence System</text>
+
+        <!-- Input Layer -->
+        <g id="input-layer">
+            <rect x="20" y="80" width="280" height="450" rx="8" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+            <rect x="40" y="100" width="240" height="40" rx="8" fill="#dbeafe" stroke="#bfdbfe" stroke-width="1"/>
+            <text x="160" y="125" text-anchor="middle" font-size="16" font-weight="600" fill="#1e3a8a">Input Layer</text>
+
+            <!-- Card 1: Document Collection -->
+            <rect x="50" y="160" width="220" height="130" rx="8" fill="white" stroke="#93c5fd" stroke-width="1"/>
+            <text x="160" y="200" font-size="28" text-anchor="middle" fill="#3b82f6">📄📄📄</text>
+            <text x="160" y="240" text-anchor="middle" font-weight="600" fill="#1e293b">Document Collection</text>
+            <text x="160" y="260" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">(e.g., PDFs)</text>
+
+            <!-- Card 2: Persona Definition -->
+            <rect x="50" y="310" width="220" height="180" rx="8" fill="white" stroke="#93c5fd" stroke-width="1"/>
+            <text x="160" y="350" font-size="28" text-anchor="middle" fill="#3b82f6">⚙️</text>
+            <text x="160" y="390" text-anchor="middle" font-weight="600" fill="#1e293b">Persona Definition</text>
+            <text x="160" y="415" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Persona Context &amp; </text>
+            <text x="160" y="435" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Job-to-be-Done</text>
+            <rect x="105" y="455" width="110" height="25" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <text x="160" y="472" text-anchor="middle" font-size="13" font-family="monospace" fill="#334155">config.json</text>
+        </g>
+
+        <!-- Arrow 1 -->
+        <line x1="300" y1="335" x2="355" y2="335" stroke="#334155" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+        <!-- Processing Layer -->
+        <g id="processing-layer">
+            <rect x="380" y="80" width="1120" height="450" rx="8" fill="#f0fdf4" stroke="#dcfce7" stroke-width="1"/>
+            <rect x="400" y="100" width="1080" height="40" rx="8" fill="#dcfce7" stroke="#bbf7d0" stroke-width="1"/>
+            <text x="940" y="125" text-anchor="middle" font-size="16" font-weight="600" fill="#166534">Processing &amp; Analysis Pipeline</text>
+
+            <!-- Card 3: PDF Processor -->
+            <rect x="400" y="160" width="190" height="330" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="495" y="250" text-anchor="middle" font-weight="600" fill="#1e293b">PDF Processor</text>
+            <text x="495" y="280" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Extracts text, detects</text>
+            <text x="495" y="300" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">sections, preserves</text>
+            <text x="495" y="320" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">structure</text>
+            <rect x="450" y="455" width="90" height="25" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <text x="495" y="472" text-anchor="middle" font-size="13" font-family="monospace" fill="#334155">PyMuPDF</text>
+            <line x1="590" y1="325" x2="615" y2="325" stroke="#64748b" stroke-width="1.5" marker-end="url(#step-arrowhead)"/>
+
+            <!-- Card 4: Embedding Engine -->
+            <rect x="625" y="160" width="190" height="330" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="720" y="250" text-anchor="middle" font-weight="600" fill="#1e293b">Embedding Engine</text>
+            <text x="720" y="280" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Generates semantic</text>
+            <text x="720" y="300" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">embeddings for text</text>
+            <text x="720" y="320" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">&amp; persona context</text>
+            <rect x="645" y="445" width="150" height="40" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <text x="720" y="460" text-anchor="middle" font-size="12" font-family="monospace" fill="#334155">SentenceTransformers</text>
+            <text x="720" y="477" text-anchor="middle" font-size="12" font-family="monospace" fill="#334155">(all-MiniLM-L6-v2)</text>
+            <line x1="815" y1="325" x2="840" y2="325" stroke="#64748b" stroke-width="1.5" marker-end="url(#step-arrowhead)"/>
+
+            <!-- Card 5: Persona Analyzer -->
+            <rect x="850" y="160" width="190" height="330" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="945" y="250" text-anchor="middle" font-weight="600" fill="#1e293b">Persona Analyzer</text>
+            <text x="945" y="280" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Scores each section/</text>
+            <text x="945" y="300" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">subsection for relevance</text>
+            <text x="945" y="320" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">using persona + job context</text>
+            <line x1="1040" y1="325" x2="1065" y2="325" stroke="#64748b" stroke-width="1.5" marker-end="url(#step-arrowhead)"/>
+
+            <!-- Card 6: Ranking Engine -->
+            <rect x="1075" y="160" width="190" height="330" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="1170" y="250" text-anchor="middle" font-weight="600" fill="#1e293b">Ranking Engine</text>
+            <text x="1170" y="280" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Combines:</text>
+            <text x="1170" y="305" text-anchor="middle" font-size="13" fill="#475569">Semantic Similarity (70%)</text>
+            <text x="1170" y="325" text-anchor="middle" font-size="13" fill="#475569">TF-IDF (20%)</text>
+            <text x="1170" y="345" text-anchor="middle" font-size="13" fill="#475569">Position Boost (10%)</text>
+            <rect x="1120" y="455" width="100" height="25" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <text x="1170" y="472" text-anchor="middle" font-size="13" font-family="monospace" fill="#334155">scikit-learn</text>
+            <line x1="1265" y1="325" x2="1290" y2="325" stroke="#64748b" stroke-width="1.5" marker-end="url(#step-arrowhead)"/>
+
+            <!-- Card 7: JSON Formatter -->
+            <rect x="1300" y="160" width="190" height="330" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1"/>
+            <text x="1395" y="250" text-anchor="middle" font-weight="600" fill="#1e293b">JSON Formatter</text>
+            <text x="1395" y="280" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Structures output.</text>
+            <text x="1395" y="300" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">Fields: metadata,</text>
+            <text x="1395" y="320" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">extracted_sections,</text>
+            <text x="1395" y="340" text-anchor="middle" font-size="14" fill="#475569" font-style="italic">subsection_analysis</text>
+        </g>
+        
+        <!-- Arrow 2 -->
+        <line x1="1500" y1="335" x2="1545" y2="335" stroke="#334155" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+        <!-- Output Layer -->
+        <g id="output-layer">
+            <rect x="1570" y="80" width="210" height="450" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+            <rect x="1590" y="100" width="170" height="40" rx="8" fill="#ffedd5" stroke="#fed7aa" stroke-width="1"/>
+            <text x="1675" y="125" text-anchor="middle" font-size="16" font-weight="600" fill="#9a3412">Output Layer</text>
+
+            <!-- Card 8: Analysis Result -->
+            <rect x="1585" y="240" width="180" height="150" rx="8" fill="white" stroke="#fb923c" stroke-width="1"/>
+            <text x="1675" y="280" font-size="28" text-anchor="middle" fill="#f97316">💻</text>
+            <text x="1675" y="320" text-anchor="middle" font-weight="600" fill="#1e293b">Analysis Result</text>
+            <rect x="1600" y="355" width="150" height="25" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <text x="1675" y="372" text-anchor="middle" font-size="13" font-family="monospace" fill="#334155">analysis_result.json</text>
+        </g>
+
+      
+    </svg>
