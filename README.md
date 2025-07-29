@@ -23,8 +23,7 @@ Ensure Docker is running before proceeding.
 Clone the repository and navigate to the challenge directory:
 
 ```bash
-git clone https://github.com/jhaaj08/Adobe-India-Hackathon25.git
-cd Adobe-India-Hackathon25/Challenge_1b
+git clone https://github.com/LokeshN1/doc-intelligence-challenge1b.git
 ````
 
 ---
